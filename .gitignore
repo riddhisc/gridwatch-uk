@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+backend/.venv/
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+*.log
+
+# Next.js / Node build output
+frontend/.next/
+frontend/out/
+frontend/.turbo/
+*.tsbuildinfo
+npm-debug.log*
+yarn-error.log*
+
+# Local-only notes (do not push)
+LOCAL_RUN.md
+
+# Env and secrets
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# ML artifacts
+backend/app/ml/artifacts/*
+!backend/app/ml/artifacts/.gitkeep
+backend/app/ml/metrics/*
+!backend/app/ml/metrics/.gitkeep
+backend/app/ml/models/*
+!backend/app/ml/models/.gitkeep
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Docker volumes
+postgres_data/
+redis_data/

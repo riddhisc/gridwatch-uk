@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  @apply h-full;
+}
+
+body {
+  @apply min-h-full min-h-screen bg-slate-100 text-slate-900 antialiased;
+  background-image: linear-gradient(180deg, #e8f1ff 0%, #f8fafc 220px, #f8fafc 100%);
+}
+
+:focus-visible {
+  @apply outline-none ring-2 ring-blue-700 ring-offset-2;
+}
+
+.card {
+  @apply rounded-xl border border-slate-200 bg-white shadow-md shadow-slate-900/5;
+}
+
+.field {
+  @apply mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-base text-slate-900 shadow-sm sm:text-sm;
+}
+
+.field:disabled {
+  @apply cursor-wait bg-slate-100 text-slate-500;
+}
+
+.btn-primary {
+  @apply rounded-lg bg-blue-700 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-800 disabled:cursor-wait disabled:bg-slate-400;
+}
+
+.muted {
+  @apply text-sm text-slate-600;
+}

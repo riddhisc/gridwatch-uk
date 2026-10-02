@@ -1,0 +1,1 @@
+"""Daily grid summaries."""
